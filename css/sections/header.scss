@@ -1,2 +1,90 @@
 .header {
+
+  &__top{
+
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__center{
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__name{
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 23px;
+
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -88px;
+
+      width: 116px;
+      height: 6px;
+      background-color: $hover;
+    }
+  }
+
+  &__txt{
+    color: $headers;
+    font-family: Gilroy;
+    font-size: 26px;
+    font-style: italic;
+  }
+
+  &__bottom{
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+}
+
+.email{
+  display: flex;
+  align-items: center;
+  color: $headers;
+  font-size: 18px;
+  @include tr;
+  @include ffg;
+
+  &:hover{
+    color: $hover;
+  }
+
+  svg{
+    margin-right: 15px;
+  }
+}
+
+.nav{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  &__link{
+    padding: 15px 0;
+    color: $headers;
+    font-size: 18px;
+    font-weight: 400;
+    @include tr;
+
+    &:hover{
+      color: $hover;
+    }
+  }
 }

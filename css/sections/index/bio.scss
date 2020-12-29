@@ -1,0 +1,47 @@
+.ibio{
+  background-color: #f5f5f5;
+  padding-top: 44px;
+
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    align-items: center;
+  }
+
+  &__title{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 80px;
+  }
+
+  &__txt{
+    position: relative;
+    @include ffg;
+    font-size: 24px;
+    line-height: 170%;
+    margin-bottom: 90px;
+
+
+    &:before{
+      content: attr(data-letter);
+      display: block;
+      font-family: Merriweather;
+      opacity: 0.35;
+      color: #e6ce6e;
+      font-size: 250px;
+      position: absolute;
+      left: 0;
+      top: -65px;
+      line-height: 1;
+    }
+  }
+
+  &__right{
+    align-self: flex-end;
+    margin-left: -20px;
+    img{
+      display: block;
+    }
+  }
+}

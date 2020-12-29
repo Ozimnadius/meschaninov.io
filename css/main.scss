@@ -3,8 +3,12 @@
 $font: 'Merriweather', Arial, sans-serif;
 
 //colors
-$text: #4D4D4D;
+$text: #545657;
 $bg: #ffffff;
+$headers: #323232;
+$hover: #e6ce71;
+$link: #2f80ed;
+$y: #e2c75b;
 
 //another
 $font-size: 16px;
@@ -18,6 +22,7 @@ $font-size: 16px;
 
 //sections
 @import "sections/header";
+@import "sections/index";
 @import "sections/footer";
 
 

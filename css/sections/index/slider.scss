@@ -1,0 +1,50 @@
+.slider{
+  width: 100%;
+  position: relative;
+
+  &__slide{
+    overflow: hidden;
+    &.swiper-slide-active{
+      &:hover{
+        img{
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    img{
+      display: block;
+      @include tr;
+    }
+
+  }
+
+  &__nav{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+
+    &-container{
+      max-width: 1560px;
+      padding: 0 20px;
+      margin: 0 auto;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__arr{
+    pointer-events: all;
+    @include tr;
+    &:hover{
+      opacity: .7;
+    }
+  }
+
+}

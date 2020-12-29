@@ -54,23 +54,38 @@ $vh: 1080;
 
 @mixin headers() {
   h1 {
-    font-size: 2rem;
+    font-size: rem(32px);
+    color: $headers;
+    font-weight: 700;
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: rem(28px);
+    color: $headers;
+    font-weight: 400;
+
   }
   h3 {
-    font-size: 1.25rem;
+    font-size: rem(24px);
+    color: $headers;
+    font-weight: 400;
   }
   h4 {
-    font-size: 1rem;
+    font-size: rem(22px);
+    color: $headers;
+    font-weight: 400;
   }
   h5 {
-    font-size: 0.875rem;
+    font-size: rem(20px);
+    color: $headers;
+    font-weight: 400;
   }
   h6 {
     font-size: 0.75rem;
   }
+}
+
+@mixin tr(){
+  transition: .3s;
 }
 
 @mixin ffg(){

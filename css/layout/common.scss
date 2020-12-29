@@ -1,3 +1,32 @@
 .button {
 
 }
+
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__title{
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
+
+.link{
+  color: $y;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  fill: $y;
+  @include tr;
+
+  &:hover{
+    color: $link;
+    fill: $link;
+  }
+
+  svg{
+    margin-left: 15px;
+  }
+}

@@ -1,0 +1,55 @@
+.ipubs{
+  padding: 80px 0;
+
+  &__top{
+    margin-bottom: 80px;
+  }
+
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 70px 20px;
+  }
+
+}
+
+.ipub{
+
+  &__title{
+    font-weight: 700;
+    margin-bottom: 40px;
+    min-height: 60px;
+  }
+
+  &__ul{
+    margin-bottom: 35px;
+  }
+
+  &__li{
+    position: relative;
+    padding-left: 55px;
+    margin-bottom: 15px;
+    @include ffg;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    &:before{
+      content: '';
+      display: block;
+      width: 35px;
+      height: 2px;
+      background-color: #e6ce6f;
+      position: absolute;
+      top: 10px;
+      left: 0;
+    }
+  }
+
+  &__link{
+    font-size: 18px;
+    margin-left: 55px;
+  }
+
+}
