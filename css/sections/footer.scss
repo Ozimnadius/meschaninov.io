@@ -1,2 +1,157 @@
 .footer {
+  background: #f5f5f5 url("/images/content/footer/bg.jpg") 0 0 no-repeat;
+  background-size: cover;
+  @include lg-block {
+    background-image: none;
+  }
+
+  &__top {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    @include lg-block {
+      padding-top: 40px;
+      padding-bottom: 90px;
+    }
+
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 70px;
+      @include lg-block {
+        margin-bottom: 40px;
+      }
+    }
+
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    max-width: 69px;
+    flex-shrink: 0;
+    margin-right: 30px;
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+
+  }
+
+  &__txt {
+    color: $headers;
+    @include ffg;
+    font-style: italic;
+  }
+
+  &__email {
+    margin-top: 20px;
+  }
+
+  &__left {
+    @include col;
+    @include size(6);
+    @include shift-right(2);
+    border-right: 1px solid #e0e0e0;
+    padding: 5px 0;
+    @include size(8);
+    @include shift-lg-right(0);
+    @include lg-block{
+      padding: 0;
+    }
+  }
+
+  &__right {
+    @include col;
+    @include size(16);
+    padding: 5px 0;
+    @include lg-block{
+      padding: 0;
+    }
+  }
+
+  &__nav {
+
+    &-item {
+      display: block;
+      color: $headers;
+      font-size: 18px;
+      padding: 15px 0;
+      @include tr;
+
+      &:hover {
+        color: $hover;
+      }
+    }
+  }
+
+  &__cols {
+    @include row-flex;
+  }
+
+  &__col {
+    @include col;
+    @include size(12);
+  }
+
+  &__item {
+    display: block;
+    padding: 15px 0;
+    color: $headers;
+    font-size: 18px;
+    @include tr;
+    @include lg-block{
+      font-size: 14px;
+    }
+
+    &:hover {
+      color: $hover;
+    }
+  }
+
+
+  &__bottom {
+    background-color: #393838;
+    padding: 25px 0;
+    @include lg-block{
+      padding: 20px 0;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__copy {
+    color: $bg;
+    @include ffg;
+    font-size: 18px;
+    @include lg-block{
+      font-size: 16px;
+    }
+  }
+
+  &__vendor {
+    display: flex;
+    align-items: center;
+    color: $bg;
+    @include ffg;
+    @include lg-block{
+      font-size: 14px;
+    }
+
+    img {
+      margin-left: 15px;
+    }
+
+  }
+
 }

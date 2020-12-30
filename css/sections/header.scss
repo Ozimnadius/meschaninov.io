@@ -1,14 +1,29 @@
 .header {
 
   &__top{
-
-    padding-top: 10px;
-    padding-bottom: 30px;
+    position: relative;
 
     .container{
+      padding-top: 10px;
+      padding-bottom: 30px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      position: relative;
+      @include lg-block{
+        padding-top: 40px;
+        padding-bottom: 20px;
+        justify-content: center;
+      }
+    }
+  }
+
+  &__logo{
+    @include lg-block{
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      max-width: 56px;
     }
   }
 
@@ -25,6 +40,18 @@
     padding-bottom: 20px;
     margin-bottom: 23px;
 
+    @include lg-block{
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+
+    svg{
+      @include lg-block{
+        width: 310px;
+        height: 36px;
+      }
+    }
+
     &:after{
       content: '';
       display: block;
@@ -36,6 +63,11 @@
       width: 116px;
       height: 6px;
       background-color: $hover;
+      @include lg-block{
+        width: 88px;
+        height: 5px;
+        margin-left: -44px;
+      }
     }
   }
 
@@ -44,6 +76,17 @@
     font-family: Gilroy;
     font-size: 26px;
     font-style: italic;
+    @include lg-block{
+      font-size: 16px;
+    }
+  }
+
+  &__email{
+    @include lg-block{
+      position: absolute;
+      top: 40px;
+      right: 20px;
+    }
   }
 
   &__bottom{
@@ -61,6 +104,10 @@
   @include tr;
   @include ffg;
 
+  @include lg-block{
+    font-size: 16px;
+  }
+
   &:hover{
     color: $hover;
   }
@@ -75,6 +122,9 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  @include lg-block{
+      justify-content: space-around;
+  }
 
   &__link{
     padding: 15px 0;
@@ -82,6 +132,9 @@
     font-size: 18px;
     font-weight: 400;
     @include tr;
+    @include lg-block{
+      font-size: 16px;
+    }
 
     &:hover{
       color: $hover;

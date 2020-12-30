@@ -38,19 +38,8 @@ block content
                             </svg>
                     .ipubs__grid
                         each i in pubsList
-                            .ipubs__item.ipub
-                                h5.ipub__title!=i
-                                ul.ipub__ul
-                                    li.ipub__li По морям, по океанам на "Отрадном", "Шаляпине", "Лермонтове"
-                                    li.ipub__li В тени двух флагов
-                                    li.ipub__li Злоключения "плюшевого мишки"
-                                    li.ipub__li Остров из никеля
-                                    li.ipub__li По морям, по океанам на "Отрадном", "Шаляпине", "Лермонтове"
-                                a(href='/').ipub__link.link
-                                    |Смотреть все
-                                    <svg width="42" height="16" viewBox="0 0 42 16" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M41.7071 8.70711C42.0976 8.31658 42.0976 7.68342 41.7071 7.29289L35.3431 0.928932C34.9526 0.538408 34.3195 0.538408 33.9289 0.928932C33.5384 1.31946 33.5384 1.95262 33.9289 2.34315L39.5858 8L33.9289 13.6569C33.5384 14.0474 33.5384 14.6805 33.9289 15.0711C34.3195 15.4616 34.9526 15.4616 35.3431 15.0711L41.7071 8.70711ZM0 9H41V7H0V9Z"/>
-                                    </svg>
+                            .ipubs__item
+                                +ipub(i)
         //- bio
         section.index__bio
             .ibio
@@ -77,12 +66,8 @@ block content
                             | Смотреть все
                     .inews__grid
                         each i in inewsList
-                            .inews__item.inew
-                                .inew__title= i.title
-                                .inew__date Опубликовано: 01.12.2020
-                                .inew__txt= i.txt
-                                a(href='/').inew__link.link
-                                    | Читать новость
+                            .inews__item
+                                +inew(i)
 
 
 

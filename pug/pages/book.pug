@@ -1,0 +1,68 @@
+extends ../main
+
+block variables
+    - var title = 'Главная'
+
+block content
+    .books
+        +bread
+        .container
+            .books__grid
+                aside.books__aside.aside
+                    h3.aside__title Публикации
+                    .aside__menu
+                        .menu
+                            .menu__item
+                                a(href='/').menu__link.active
+                                    span.menu__link-txt
+                                        |51 410 кругосветны миль
+                                        br
+                                        |на "Лермонтове"
+                                    span.menu__link-arr.jsMenuTrigger
+                                        <svg width="15" height="9" viewBox="0 0 15 9" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.49994 7.23025L1.00653 0.736832L0.193359 1.55L7.49994 8.85659L14.8065 1.55001L13.9934 0.736834L7.49994 7.23025Z"/>
+                                        </svg>
+                                .submenu.active
+                                    each i in submenu
+                                        a(href='/').submenu__link!=i
+                            each item in menu
+                                .menu__item
+                                    a(href='/').menu__link
+                                        span.menu__link-txt!=item
+                                        span.menu__link-arr.jsMenuTrigger
+                                            <svg width="15" height="9" viewBox="0 0 15 9" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.49994 7.23025L1.00653 0.736832L0.193359 1.55L7.49994 8.85659L14.8065 1.55001L13.9934 0.736834L7.49994 7.23025Z"/>
+                                            </svg>
+                                    .submenu
+                                        each i in submenu
+                                            a(href='/').submenu__link!=i
+
+                main.books__main
+                    h1.books__title
+                        |51 410 кругосветных миль
+                        br
+                        |на "Лермонтове"
+                    .books__chapters
+                        .chapters
+                            each i in submenu
+                                .chapter
+                                    .chapter__title!=i
+                                    .chapter__txt
+                                        |На первый взгляд здесь все кажется обычным для Океании: духота с буквально висящими в воздухе капельками воды; стройные красавицы пальмы, устремившие свои макушки в самое небо; улыбчивые...
+                                    a(href='/').chapter__link.link
+                                        |Читать
+                                        <svg width="42" height="16" viewBox="0 0 42 16" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M41.7071 8.70711C42.0976 8.31658 42.0976 7.68342 41.7071 7.29289L35.3431 0.928932C34.9526 0.538408 34.3195 0.538408 33.9289 0.928932C33.5384 1.31946 33.5384 1.95262 33.9289 2.34315L39.5858 8L33.9289 13.6569C33.5384 14.0474 33.5384 14.6805 33.9289 15.0711C34.3195 15.4616 34.9526 15.4616 35.3431 15.0711L41.7071 8.70711ZM0 9H41V7H0V9Z" />
+                                        </svg>
+
+
+
+
+
+
+
+
+
+
+
+

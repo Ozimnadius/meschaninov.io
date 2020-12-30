@@ -1,0 +1,132 @@
+.books{
+  border-bottom: 1px solid #e0e0e0;
+
+  &__grid{
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    grid-gap: 70px;
+  }
+
+  &__main{
+    padding-top: 30px;
+    padding-bottom: 120px;
+  }
+
+  &__title{
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 40px;
+    position: relative;
+    margin-bottom: 60px;
+
+    img{
+      display: block;
+      margin-top: 30px;
+    }
+
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 116px;
+      height: 6px;
+      background-color: $hover;
+    }
+  }
+
+  &__sub{
+    color: $headers;
+    font-size: 28px;
+    position: relative;
+    line-height: 167%;
+    margin-bottom: 50px;
+    &:before{
+      content: attr(data-letter);
+      display: block;
+      position: absolute;
+      top: -60px;
+      left: 0;
+      font-weight: bold;
+      font-size: 200px;
+      line-height: 1;
+      color: #323232;
+      opacity: 0.06;
+
+    }
+  }
+
+  &__views{
+    color: #828282;
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 40px;
+  }
+
+  &__content{
+    margin-bottom: 110px;
+  }
+
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link{
+    font-size: 14px;
+  }
+}
+
+.chapters{
+
+}
+
+.chapter{
+  padding-top: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-left: 70px;
+  line-height: 160%;
+
+  &:first-child{
+    padding-top: 0;
+  }
+  &:last-child{
+    border: none;
+    padding-bottom: 0;
+  }
+
+  &__title{
+    color: $headers;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 30px;
+
+    &:before{
+      content: '';
+      display: block;
+      width: 35px;
+      height: 2px;
+      background-color: #e6ce6f;
+      position: absolute;
+      left: -70px;
+      top: 13px;
+
+    }
+  }
+
+  &__txt{
+    margin-bottom: 25px;
+  }
+
+}
+
+
+@import "books/aside";

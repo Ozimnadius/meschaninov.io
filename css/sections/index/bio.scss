@@ -1,6 +1,9 @@
 .ibio{
   background-color: #f5f5f5;
   padding-top: 44px;
+  @include lg-block{
+    padding-top: 50px;
+  }
 
   &__grid{
     display: grid;
@@ -13,6 +16,10 @@
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 80px;
+    @include lg-block{
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
   }
 
   &__txt{
@@ -21,6 +28,10 @@
     font-size: 24px;
     line-height: 170%;
     margin-bottom: 90px;
+    @include lg-block{
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
 
 
     &:before{
@@ -34,12 +45,20 @@
       left: 0;
       top: -65px;
       line-height: 1;
+      @include lg-block{
+        font-size: 180px;
+        top: -40px;
+        left: 20px;
+      }
     }
   }
 
   &__right{
     align-self: flex-end;
     margin-left: -20px;
+    @include lg-block{
+      margin-left: 0;
+    }
     img{
       display: block;
     }

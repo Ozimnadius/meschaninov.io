@@ -19,14 +19,62 @@
   font-weight: 700;
   font-style: normal;
   fill: $y;
+  display: flex;
+  align-items: center;
   @include tr;
+  @include lg-block{
+    font-size: 16px;
+  }
 
   &:hover{
     color: $link;
     fill: $link;
   }
 
+  &_prev{
+    margin: 0;
+    svg{
+      margin-right: 15px;
+    }
+  }
+
   svg{
     margin-left: 15px;
+  }
+
+}
+
+.bread{
+  border-bottom: 1px solid #e0e0e0;
+  padding: 30px 0;
+
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 -18px;
+  }
+
+  &__item{
+    padding: 0 18px;
+    border-right: 2px solid #e6cf72;
+    color: #6c6c6c;
+    @include ffg;
+    font-size: 14px;
+
+
+    svg{
+      display: block;
+      fill: #e6cf72;
+    }
+
+    &:last-child{
+      border: none;
+    }
+
+    &.active{
+      color: #e6cf72;
+    }
+
   }
 }

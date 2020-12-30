@@ -1,0 +1,40 @@
+extends ../main
+
+block variables
+    - var title = 'Главная'
+
+block content
+    .books
+        +bread
+        .container
+            .books__grid
+                aside.books__aside.aside
+                    h3.aside__title Публикации
+                    .aside__menu
+                        .menu
+                            each item in menu
+                                .menu__item
+                                    a(href='/').menu__link
+                                        span.menu__link-txt!=item
+                                        span.menu__link-arr.jsMenuTrigger
+                                            <svg width="15" height="9" viewBox="0 0 15 9" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.49994 7.23025L1.00653 0.736832L0.193359 1.55L7.49994 8.85659L14.8065 1.55001L13.9934 0.736834L7.49994 7.23025Z"/>
+                                            </svg>
+                                    .submenu
+                                        each i in submenu
+                                            a(href='/').submenu__link!=i
+
+                main.books__main
+                    h1.books__title Все публикации
+                    .books__list
+                        each i in pubsList
+                            .books__item
+                                +ipub(i)
+
+
+
+
+
+
+
+

@@ -1,41 +1,54 @@
-.ipubs{
+.ipubs {
   padding: 80px 0;
-
-  &__top{
-    margin-bottom: 80px;
+  @include lg-block {
+    padding: 60px 0;
   }
 
-  &__grid{
+  &__top {
+    margin-bottom: 80px;
+    @include lg-block {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 70px 20px;
+    @include lg-block {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 40px 20px;
+    }
   }
 
 }
 
-.ipub{
+.ipub {
 
-  &__title{
+  &__title {
     font-weight: 700;
     margin-bottom: 40px;
     min-height: 60px;
+    @include lg-block{
+      font-size: 18px;
+    }
   }
 
-  &__ul{
+  &__ul {
     margin-bottom: 35px;
   }
 
-  &__li{
+  &__li {
     position: relative;
     padding-left: 55px;
     margin-bottom: 15px;
     @include ffg;
 
-    &:last-child{
+    &:last-child {
       margin-bottom: 0;
     }
 
-    &:before{
+    &:before {
       content: '';
       display: block;
       width: 35px;
@@ -47,9 +60,12 @@
     }
   }
 
-  &__link{
+  &__link {
     font-size: 18px;
     margin-left: 55px;
+    @include lg-block{
+      font-size: 16px;
+    }
   }
 
 }

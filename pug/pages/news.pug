@@ -1,0 +1,40 @@
+extends ../main
+
+block variables
+    - var title = 'Главная'
+
+block content
+    .news
+        +bread
+        .container
+            main.news__main
+                h1.news__title Новости
+                .news__grid
+                    each i in newsList
+                        .news__item
+                            +inew(i)
+                .news__nav
+                    .nnav
+                        a(href='/').nnav__arr.nnav__prev
+                            <svg width="16" height="25" viewBox="0 0 16 25" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.40354 12.5L14 3.16858L12.7982 2L2 12.5L12.7982 23L14 21.8314L4.40354 12.5Z" stroke-width="2"/>
+                            </svg>
+                        a(href='/').nnav__item.active 1
+                        a(href='/').nnav__item 2
+                        a(href='/').nnav__item 3
+                        a(href='/').nnav__item 4
+                        a(href='/').nnav__arr.nnav__next
+                            <svg width="16" height="25" viewBox="0 0 16 25" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5965 12.5L2 21.8314L3.20177 23L14 12.5L3.20177 2L2 3.16858L11.5965 12.5Z" stroke-width="2"/>
+                            </svg>
+
+
+
+
+
+
+
+
+
+
+
