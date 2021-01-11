@@ -5,11 +5,27 @@
     display: grid;
     grid-template-columns: 380px 1fr;
     grid-gap: 70px;
+    @include lg-block{
+        grid-template-columns: 1fr;
+    }
+  }
+
+  &__aside{
+    @include lg-block{
+      display: none;
+    }
   }
 
   &__main{
     padding-top: 30px;
     padding-bottom: 120px;
+    @include lg-block{
+      padding-bottom: 70px;
+    }
+    @include sm-block{
+      padding-bottom: 50px;
+    }
+
   }
 
   &__title{
@@ -18,6 +34,16 @@
     padding-bottom: 40px;
     position: relative;
     margin-bottom: 60px;
+    @include lg-block{
+      font-size: 24px;
+      padding-bottom: 25px;
+      margin-bottom: 40px;
+    }
+    @include sm-block{
+      font-size: 20px;
+      padding-bottom: 15px;
+      margin-bottom: 25px;
+    }
 
     img{
       display: block;
@@ -33,6 +59,10 @@
       width: 116px;
       height: 6px;
       background-color: $hover;
+      @include sm-block{
+        width: 98px;
+        height: 4px;
+      }
     }
   }
 
@@ -42,6 +72,13 @@
     position: relative;
     line-height: 167%;
     margin-bottom: 50px;
+    @include lg-block{
+      font-size: 22px;
+    }
+    @include sm-block{
+      font-size: 18px;
+    }
+
     &:before{
       content: attr(data-letter);
       display: block;
@@ -53,6 +90,14 @@
       line-height: 1;
       color: #323232;
       opacity: 0.06;
+      @include lg-block{
+        font-size: 180px;
+        top: -40px;
+      }
+      @include sm-block{
+        font-size: 160px;
+        top: -30px;
+      }
 
     }
   }
@@ -61,12 +106,22 @@
     color: #828282;
     font-size: 14px;
     margin-bottom: 40px;
+    @include sm-block{
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
   }
 
   &__list{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 40px;
+    @include lg-block{
+        grid-gap: 40px 20px;
+    }
+    @include sm-block{
+        grid-template-columns: 1fr;
+    }
   }
 
   &__content{
@@ -76,10 +131,21 @@
   &__nav{
     display: flex;
     justify-content: space-between;
+    @include sm-block{
+        flex-direction: column;
+    }
   }
 
   &__link{
     font-size: 14px;
+
+    &:last-child{
+      @include sm-block{
+        margin-top: 20px;
+          align-self: flex-end;
+      }
+    }
+
   }
 }
 
@@ -94,6 +160,14 @@
   margin-left: 70px;
   line-height: 160%;
 
+  @include sm-block{
+    margin-left: 50px;
+  }
+  @include sm-block{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   &:first-child{
     padding-top: 0;
   }
@@ -102,12 +176,19 @@
     padding-bottom: 0;
   }
 
+
+
   &__title{
     color: $headers;
     font-size: 20px;
     font-weight: 700;
     position: relative;
     margin-bottom: 30px;
+    line-height: 167%;
+    @include sm-block{
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
 
     &:before{
       content: '';
@@ -118,12 +199,25 @@
       position: absolute;
       left: -70px;
       top: 13px;
+      @include sm-block{
+        left: -50px;
+        top: 10px;
+      }
 
     }
   }
 
   &__txt{
     margin-bottom: 25px;
+  }
+
+  &__link{
+    @include lg-block{
+      font-size: 20px;
+    }
+    @include sm-block{
+      font-size: 14px;
+    }
   }
 
 }
