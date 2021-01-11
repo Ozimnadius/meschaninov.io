@@ -1,9 +1,15 @@
 .inews {
   padding-top: 50px;
   padding-bottom: 110px;
+  @include sm-block{
+    padding-bottom: 50px;
+  }
 
   &__top {
     margin-bottom: 60px;
+    @include sm-block{
+      margin-bottom: 30px;
+    }
   }
 
   &__grid {
@@ -13,9 +19,17 @@
     @include lg-block{
        grid-template-columns: repeat(3,1fr);
     }
+    @include sm-block{
+        grid-template-columns: repeat(2,1fr);
+    }
   }
 
   &__item{
+    &:nth-child(3){
+      @include sm-block{
+        display: none;
+      }
+    }
     &:nth-child(4){
       @include lg-block{
         display: none;

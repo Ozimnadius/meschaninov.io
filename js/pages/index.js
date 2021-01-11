@@ -26,5 +26,6 @@ $(function () {
         }
     })
 
+    let mmenu = new Mmenu();
 
 });

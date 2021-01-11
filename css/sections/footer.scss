@@ -12,6 +12,10 @@
       padding-top: 40px;
       padding-bottom: 90px;
     }
+    @include sm-block {
+      padding-top: 25px;
+      padding-bottom: 50px;
+    }
 
     &-top {
       display: flex;
@@ -19,6 +23,10 @@
       margin-bottom: 70px;
       @include lg-block {
         margin-bottom: 40px;
+      }
+      @include sm-block {
+        flex-direction: column;
+        margin-bottom: 30px;
       }
     }
 
@@ -29,10 +37,20 @@
     align-items: center;
   }
 
+  &__email {
+    @include sm-block {
+      align-self: center;
+    }
+  }
+
   &__img {
     max-width: 69px;
     flex-shrink: 0;
     margin-right: 30px;
+    @include sm-block {
+      max-width: 56px;
+      margin-right: 15px;
+    }
   }
 
   &__desc {
@@ -41,7 +59,12 @@
   }
 
   &__name {
-
+    svg {
+      @include sm-block {
+        width: 244px;
+        height: 28px;
+      }
+    }
   }
 
   &__txt {
@@ -62,8 +85,13 @@
     padding: 5px 0;
     @include size-lg(8);
     @include shift-lg-right(0);
-    @include lg-block{
+    @include lg-block {
       padding: 0;
+    }
+    @include size-sm(24);
+    @include shift-sm-right(0);
+    @include sm-block {
+      border-right: none;
     }
   }
 
@@ -71,8 +99,11 @@
     @include col;
     @include size(16);
     padding: 5px 0;
-    @include lg-block{
+    @include lg-block {
       padding: 0;
+    }
+    @include sm-block {
+      display: none;
     }
   }
 
@@ -84,6 +115,10 @@
       font-size: 18px;
       padding: 15px 0;
       @include tr;
+      @include sm-block {
+        text-align: center;
+        padding: 13px 0;
+      }
 
       &:hover {
         color: $hover;
@@ -106,7 +141,7 @@
     color: $headers;
     font-size: 18px;
     @include tr;
-    @include lg-block{
+    @include lg-block {
       font-size: 14px;
     }
 
@@ -115,11 +150,10 @@
     }
   }
 
-
   &__bottom {
     background-color: #393838;
     padding: 25px 0;
-    @include lg-block{
+    @include lg-block {
       padding: 20px 0;
     }
 
@@ -127,6 +161,9 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @include sm-block {
+        flex-direction: column;
+      }
     }
   }
 
@@ -134,8 +171,12 @@
     color: $bg;
     @include ffg;
     font-size: 18px;
-    @include lg-block{
+    @include lg-block {
       font-size: 16px;
+    }
+    @include sm-block {
+      margin-bottom: 10px;
+      font-size: 18px;
     }
   }
 
@@ -144,12 +185,20 @@
     align-items: center;
     color: $bg;
     @include ffg;
-    @include lg-block{
+    @include lg-block {
       font-size: 14px;
+    }
+    @include sm-block {
+      flex-direction: column;
+      font-size: 16px;
     }
 
     img {
       margin-left: 15px;
+      @include sm-block{
+        margin-left: 0;
+        margin-top: 5px;
+      }
     }
 
   }

@@ -1,0 +1,116 @@
+.mmenu {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  transform: translateX(-100%);
+  background-color: $bg;
+  @include tr;
+
+
+  &.active {
+    transform: translateX(0);
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__top {
+    width: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 20px;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    color: #191919;
+    @include ffg;
+    font-size: 18px;
+    font-weight: 600;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  &__section{
+    color: $headers;
+    font-size: 16px;
+    padding: 19px 20px;
+    display: block;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  &__center{
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  &__nav{
+    color: $headers;
+    font-size: 16px;
+    font-weight: 400;
+
+    &_sub{
+      font-size: 14px;
+
+      .mmenu__link-name{
+        padding-left: 40px;
+      }
+    }
+  }
+
+  &__item{
+
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    &-name{
+      flex-grow: 1;
+      padding: 10px 20px;
+      min-height: 60px;
+      display: flex;
+      align-items: center;
+    }
+    &-btn{
+      width: 40px;
+      min-height: 60px;
+      height: 100%;
+    }
+  }
+
+  &__bottom{
+    padding: 40px 20px;
+  }
+
+
+}
+
+.submmenu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $bg;
+
+  &.active {
+    display: flex;
+  }
+}

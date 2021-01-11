@@ -20,7 +20,13 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__top">
-          <div class="container"><a class="header__logo" href="/"><img class="undefined" src="images/content/logo.png" alt="lorem"/></a>
+          <div class="container">
+            <button class="header__menu mmenu-btn jsMenuOpen" type="button"><svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="29.2534" height="3.0016" fill="#BDBDBD"/>
+<rect y="5.99954" width="20.9596" height="2.96235" fill="#BDBDBD"/>
+<rect y="11.9598" width="11.9518" height="3.04532" fill="#BDBDBD"/>
+</svg>
+            </button><a class="header__logo" href="/"><img class="undefined" src="images/content/logo.png" alt="lorem"/></a>
             <div class="header__center">
               <div class="header__name"><svg width="517" height="59" viewBox="0 0 517 59" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M21.1101 16.0273L18.8624 20.6196C16.2705 19.0381 14.4379 17.8318 13.3647 17.0005C12.3117 16.1692 11.198 15.0947 10.0235 13.7768C8.07955 11.5466 7.10757 9.11357 7.10757 6.47784C7.10757 4.61254 7.67456 3.15275 8.80853 2.09845C9.96275 1.04416 11.5523 0.51701 13.5773 0.51701C16.1287 0.51701 18.9029 1.19622 21.8998 2.55464C23.8843 3.48729 26.7698 5.27148 30.5565 7.90722L32.6827 4.80515L36.7832 7.90722L34.5963 11.283C37.4514 14.5473 39.5068 17.2235 40.7622 19.3119C42.5442 22.3125 43.4352 25.4754 43.4352 28.8005C43.4352 33.2204 41.957 36.5962 39.0005 38.9278C36.0441 41.2594 31.7613 42.4253 26.1522 42.4253C24.674 42.4253 23.0946 42.3036 21.4138 42.0603C20.0369 41.817 18.3562 41.3912 16.3717 40.783C15.3592 41.2696 14.3873 41.6244 13.4558 41.8474C11.9168 42.2326 10.2159 42.4253 8.35292 42.4253C5.82173 42.4253 3.79678 42.0704 2.27807 41.3608C0.759356 40.6309 0 39.6577 0 38.4412C0 37.2653 0.587235 36.3529 1.76171 35.7041C2.95643 35.0756 4.65738 34.7613 6.86458 34.7613C8.90978 34.7613 11.6637 35.0452 15.1264 35.6129C16.3818 34.4167 17.5259 33.2002 18.5587 31.9634C20.0166 30.0373 21.7176 26.55 23.6615 21.5015C24.6538 18.9672 25.3422 17.2742 25.727 16.4227C26.132 15.5711 26.7698 14.3546 27.6406 12.7732C24.4006 10.2591 21.8695 8.47491 20.047 7.42062C18.0626 6.3055 16.2198 5.74794 14.5189 5.74794C13.3444 5.74794 12.7572 6.26495 12.7572 7.29897C12.7572 8.15052 13.1723 9.12371 14.0025 10.2186C14.367 10.6849 14.8429 11.2019 15.4301 11.7696C16.8071 13.0469 18.7004 14.4662 21.1101 16.0273ZM21.9606 36.5861L22.9629 36.7686C24.8259 37.0119 26.132 37.1335 26.8812 37.1335C29.0479 37.1335 30.9311 36.7787 32.5308 36.0691C34.1305 35.3595 35.3657 34.3457 36.2365 33.0278C37.087 31.6897 37.5122 30.1285 37.5122 28.3443C37.5122 26.0735 36.8338 23.7521 35.4771 21.3799C34.7279 20.1229 33.523 18.582 31.8626 16.7572C31.4981 17.5277 31.164 18.2576 30.8602 18.9469C30.759 19.1902 30.4451 20.0215 29.9186 21.4407L29.4934 22.6268C28.6024 25.2423 27.3773 27.9591 25.8181 30.7773C24.8866 32.5007 23.6008 34.4369 21.9606 36.5861Z" fill="#323232"/>
@@ -319,9 +325,352 @@
         </div>
       </div>
     </div>
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-    <!-- Для изменений после верстки-->
-    <script src="js/custom.js"></script>
   </body>
+  <div class="mmenu">
+    <div class="mmenu__main">
+      <div class="mmenu__top">
+        <div class="mmenu__left">
+          <button class="mmenu__btn jsMenuClose" type="button">
+            <svg width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.646446 3.64644C0.451185 3.84171 0.451185 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976309 4.7308 0.659727 4.53553 0.464465C4.34027 0.269203 4.02369 0.269203 3.82843 0.464465L0.646446 3.64644ZM20 3.5L1 3.5L1 4.5L20 4.5L20 3.5Z" fill="#191919"/>
+</svg>Меню
+          </button>
+        </div>
+      </div>
+      <div class="mmenu__center">
+        <div class="mmenu__nav">
+          <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Автобиография</span></a></div>
+          <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Публикации</span>
+              <button class="mmenu__link-btn jsSubmenuOpen" type="button"><svg width="4" height="9" viewBox="0 0 4 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4.54768L0.469938 8.47678L0.469939 0.618576L4 4.54768Z" fill="black"/>
+</svg>
+              </button></a>
+            <div class="submmenu">
+              <div class="mmenu__main">
+                <div class="mmenu__top">
+                  <div class="mmenu__left">
+                    <button class="mmenu__btn jsSubmenuClose" type="button">
+                      <svg width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.646446 3.64644C0.451185 3.84171 0.451185 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976309 4.7308 0.659727 4.53553 0.464465C4.34027 0.269203 4.02369 0.269203 3.82843 0.464465L0.646446 3.64644ZM20 3.5L1 3.5L1 4.5L20 4.5L20 3.5Z" fill="#191919"/>
+</svg>Назад
+                    </button>
+                  </div>
+                  <div class="mmenu__right">
+                    <button class="mmenu__close jsMenuClose" type="button"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.7935 6.4L18.3935 5L12.7935 10.6L7.19346 5L5.79346 6.4L11.3935 12L5.79346 17.6L7.19346 19L12.7935 13.4L18.3935 19L19.7935 17.6L14.1935 12L19.7935 6.4Z" fill="#BDBDBD"/>
+</svg>
+                    </button>
+                  </div>
+                </div><a class="mmenu__section" href="/">Публикации</a>
+                <div class="mmenu__center">
+                  <div class="mmenu__nav mmenu__nav_sub">
+                    <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">51 410 кругосветны миль <br> на "Лермонтове"</span>
+                        <button class="mmenu__link-btn jsSubmenuOpen" type="button"><svg width="4" height="9" viewBox="0 0 4 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4.54768L0.469938 8.47678L0.469939 0.618576L4 4.54768Z" fill="black"/>
+</svg>
+                        </button></a>
+                      <div class="submmenu">
+                        <div class="mmenu__main">
+                          <div class="mmenu__top">
+                            <div class="mmenu__left">
+                              <button class="mmenu__btn jsSubmenuClose" type="button">
+                                <svg width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.646446 3.64644C0.451185 3.84171 0.451185 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976309 4.7308 0.659727 4.53553 0.464465C4.34027 0.269203 4.02369 0.269203 3.82843 0.464465L0.646446 3.64644ZM20 3.5L1 3.5L1 4.5L20 4.5L20 3.5Z" fill="#191919"/>
+</svg>Назад
+                              </button>
+                            </div>
+                            <div class="mmenu__right">
+                              <button class="mmenu__close jsMenuClose" type="button"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.7935 6.4L18.3935 5L12.7935 10.6L7.19346 5L5.79346 6.4L11.3935 12L5.79346 17.6L7.19346 19L12.7935 13.4L18.3935 19L19.7935 17.6L14.1935 12L19.7935 6.4Z" fill="#BDBDBD"/>
+</svg>
+                              </button>
+                            </div>
+                          </div><a class="mmenu__section" href="/">51 410 кругосветны миль <br> на "Лермонтове"</a>
+                          <div class="mmenu__center">
+                            <div class="mmenu__nav mmenu__nav_sub">
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">По морям, по океанам на <br> "Отрадном", "Шаляпине", <br> "Лермонтове"</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">В тени двух флагов</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Злоключения <br> "плюшевого мишки"</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Остров из никеля</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Преступление века</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Осень в городе Геркулеса</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Неземная земля Лансароте</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Флаг на горе Анкон</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Старая сеть вся в дырах</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Если упал кокос...</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Ананас коварный</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Фабрика иллюзий</span></a></div>
+                            </div>
+                          </div>
+                          <div class="mmenu__bottom">
+                            <div class="mmenu__email"><a class="email" href="mailto:dsm47@rambler.ru">
+                                <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.1061 2.73449L22.35 2.58904V2.30503V2.28571C22.35 1.37546 21.6083 0.642857 20.7 0.642857H2.3C1.39167 0.642857 0.65 1.37546 0.65 2.28571V2.30503V2.58904L0.89393 2.73449L10.3564 8.37672C11.0605 8.79651 11.9395 8.79651 12.6436 8.37672L22.1061 2.73449ZM1.40607 3.20837L0.65 2.75755V3.63782V13.7143C0.65 14.6245 1.39167 15.3571 2.3 15.3571H20.7C21.6083 15.3571 22.35 14.6245 22.35 13.7143V3.63782V2.75755L21.5939 3.20837L12.7231 8.49781C11.9704 8.94663 11.0296 8.94663 10.2769 8.49781L1.40607 3.20837ZM0.5 13.7143V2.28571C0.5 1.30242 1.30295 0.5 2.3 0.5H20.7C21.6971 0.5 22.5 1.30242 22.5 2.28571V13.7143C22.5 14.6976 21.6971 15.5 20.7 15.5H2.3C1.30295 15.5 0.5 14.6976 0.5 13.7143Z" fill="#E6CF73" stroke="#E4CB69"/>
+</svg>dsm47@rambler.ru</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Русские на Эвересте <br> Хроника восхождения</span>
+                        <button class="mmenu__link-btn jsSubmenuOpen" type="button"><svg width="4" height="9" viewBox="0 0 4 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4.54768L0.469938 8.47678L0.469939 0.618576L4 4.54768Z" fill="black"/>
+</svg>
+                        </button></a>
+                      <div class="submmenu">
+                        <div class="mmenu__main">
+                          <div class="mmenu__top">
+                            <div class="mmenu__left">
+                              <button class="mmenu__btn jsSubmenuClose" type="button">
+                                <svg width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.646446 3.64644C0.451185 3.84171 0.451185 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976309 4.7308 0.659727 4.53553 0.464465C4.34027 0.269203 4.02369 0.269203 3.82843 0.464465L0.646446 3.64644ZM20 3.5L1 3.5L1 4.5L20 4.5L20 3.5Z" fill="#191919"/>
+</svg>Назад
+                              </button>
+                            </div>
+                            <div class="mmenu__right">
+                              <button class="mmenu__close jsMenuClose" type="button"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.7935 6.4L18.3935 5L12.7935 10.6L7.19346 5L5.79346 6.4L11.3935 12L5.79346 17.6L7.19346 19L12.7935 13.4L18.3935 19L19.7935 17.6L14.1935 12L19.7935 6.4Z" fill="#BDBDBD"/>
+</svg>
+                              </button>
+                            </div>
+                          </div><a class="mmenu__section" href="/">Русские на Эвересте <br> Хроника восхождения</a>
+                          <div class="mmenu__center">
+                            <div class="mmenu__nav mmenu__nav_sub">
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">По морям, по океанам на <br> "Отрадном", "Шаляпине", <br> "Лермонтове"</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">В тени двух флагов</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Злоключения <br> "плюшевого мишки"</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Остров из никеля</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Преступление века</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Осень в городе Геркулеса</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Неземная земля Лансароте</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Флаг на горе Анкон</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Старая сеть вся в дырах</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Если упал кокос...</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Ананас коварный</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Фабрика иллюзий</span></a></div>
+                            </div>
+                          </div>
+                          <div class="mmenu__bottom">
+                            <div class="mmenu__email"><a class="email" href="mailto:dsm47@rambler.ru">
+                                <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.1061 2.73449L22.35 2.58904V2.30503V2.28571C22.35 1.37546 21.6083 0.642857 20.7 0.642857H2.3C1.39167 0.642857 0.65 1.37546 0.65 2.28571V2.30503V2.58904L0.89393 2.73449L10.3564 8.37672C11.0605 8.79651 11.9395 8.79651 12.6436 8.37672L22.1061 2.73449ZM1.40607 3.20837L0.65 2.75755V3.63782V13.7143C0.65 14.6245 1.39167 15.3571 2.3 15.3571H20.7C21.6083 15.3571 22.35 14.6245 22.35 13.7143V3.63782V2.75755L21.5939 3.20837L12.7231 8.49781C11.9704 8.94663 11.0296 8.94663 10.2769 8.49781L1.40607 3.20837ZM0.5 13.7143V2.28571C0.5 1.30242 1.30295 0.5 2.3 0.5H20.7C21.6971 0.5 22.5 1.30242 22.5 2.28571V13.7143C22.5 14.6976 21.6971 15.5 20.7 15.5H2.3C1.30295 15.5 0.5 14.6976 0.5 13.7143Z" fill="#E6CF73" stroke="#E4CB69"/>
+</svg>dsm47@rambler.ru</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Груз 200 <br> Афганский дневник</span>
+                        <button class="mmenu__link-btn jsSubmenuOpen" type="button"><svg width="4" height="9" viewBox="0 0 4 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4.54768L0.469938 8.47678L0.469939 0.618576L4 4.54768Z" fill="black"/>
+</svg>
+                        </button></a>
+                      <div class="submmenu">
+                        <div class="mmenu__main">
+                          <div class="mmenu__top">
+                            <div class="mmenu__left">
+                              <button class="mmenu__btn jsSubmenuClose" type="button">
+                                <svg width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.646446 3.64644C0.451185 3.84171 0.451185 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976309 4.7308 0.659727 4.53553 0.464465C4.34027 0.269203 4.02369 0.269203 3.82843 0.464465L0.646446 3.64644ZM20 3.5L1 3.5L1 4.5L20 4.5L20 3.5Z" fill="#191919"/>
+</svg>Назад
+                              </button>
+                            </div>
+                            <div class="mmenu__right">
+                              <button class="mmenu__close jsMenuClose" type="button"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.7935 6.4L18.3935 5L12.7935 10.6L7.19346 5L5.79346 6.4L11.3935 12L5.79346 17.6L7.19346 19L12.7935 13.4L18.3935 19L19.7935 17.6L14.1935 12L19.7935 6.4Z" fill="#BDBDBD"/>
+</svg>
+                              </button>
+                            </div>
+                          </div><a class="mmenu__section" href="/">Груз 200 <br> Афганский дневник</a>
+                          <div class="mmenu__center">
+                            <div class="mmenu__nav mmenu__nav_sub">
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">По морям, по океанам на <br> "Отрадном", "Шаляпине", <br> "Лермонтове"</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">В тени двух флагов</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Злоключения <br> "плюшевого мишки"</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Остров из никеля</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Преступление века</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Осень в городе Геркулеса</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Неземная земля Лансароте</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Флаг на горе Анкон</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Старая сеть вся в дырах</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Если упал кокос...</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Ананас коварный</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Фабрика иллюзий</span></a></div>
+                            </div>
+                          </div>
+                          <div class="mmenu__bottom">
+                            <div class="mmenu__email"><a class="email" href="mailto:dsm47@rambler.ru">
+                                <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.1061 2.73449L22.35 2.58904V2.30503V2.28571C22.35 1.37546 21.6083 0.642857 20.7 0.642857H2.3C1.39167 0.642857 0.65 1.37546 0.65 2.28571V2.30503V2.58904L0.89393 2.73449L10.3564 8.37672C11.0605 8.79651 11.9395 8.79651 12.6436 8.37672L22.1061 2.73449ZM1.40607 3.20837L0.65 2.75755V3.63782V13.7143C0.65 14.6245 1.39167 15.3571 2.3 15.3571H20.7C21.6083 15.3571 22.35 14.6245 22.35 13.7143V3.63782V2.75755L21.5939 3.20837L12.7231 8.49781C11.9704 8.94663 11.0296 8.94663 10.2769 8.49781L1.40607 3.20837ZM0.5 13.7143V2.28571C0.5 1.30242 1.30295 0.5 2.3 0.5H20.7C21.6971 0.5 22.5 1.30242 22.5 2.28571V13.7143C22.5 14.6976 21.6971 15.5 20.7 15.5H2.3C1.30295 15.5 0.5 14.6976 0.5 13.7143Z" fill="#E6CF73" stroke="#E4CB69"/>
+</svg>dsm47@rambler.ru</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Смутные рассказы</span>
+                        <button class="mmenu__link-btn jsSubmenuOpen" type="button"><svg width="4" height="9" viewBox="0 0 4 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4.54768L0.469938 8.47678L0.469939 0.618576L4 4.54768Z" fill="black"/>
+</svg>
+                        </button></a>
+                      <div class="submmenu">
+                        <div class="mmenu__main">
+                          <div class="mmenu__top">
+                            <div class="mmenu__left">
+                              <button class="mmenu__btn jsSubmenuClose" type="button">
+                                <svg width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.646446 3.64644C0.451185 3.84171 0.451185 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976309 4.7308 0.659727 4.53553 0.464465C4.34027 0.269203 4.02369 0.269203 3.82843 0.464465L0.646446 3.64644ZM20 3.5L1 3.5L1 4.5L20 4.5L20 3.5Z" fill="#191919"/>
+</svg>Назад
+                              </button>
+                            </div>
+                            <div class="mmenu__right">
+                              <button class="mmenu__close jsMenuClose" type="button"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.7935 6.4L18.3935 5L12.7935 10.6L7.19346 5L5.79346 6.4L11.3935 12L5.79346 17.6L7.19346 19L12.7935 13.4L18.3935 19L19.7935 17.6L14.1935 12L19.7935 6.4Z" fill="#BDBDBD"/>
+</svg>
+                              </button>
+                            </div>
+                          </div><a class="mmenu__section" href="/">Смутные рассказы</a>
+                          <div class="mmenu__center">
+                            <div class="mmenu__nav mmenu__nav_sub">
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">По морям, по океанам на <br> "Отрадном", "Шаляпине", <br> "Лермонтове"</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">В тени двух флагов</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Злоключения <br> "плюшевого мишки"</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Остров из никеля</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Преступление века</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Осень в городе Геркулеса</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Неземная земля Лансароте</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Флаг на горе Анкон</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Старая сеть вся в дырах</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Если упал кокос...</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Ананас коварный</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Фабрика иллюзий</span></a></div>
+                            </div>
+                          </div>
+                          <div class="mmenu__bottom">
+                            <div class="mmenu__email"><a class="email" href="mailto:dsm47@rambler.ru">
+                                <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.1061 2.73449L22.35 2.58904V2.30503V2.28571C22.35 1.37546 21.6083 0.642857 20.7 0.642857H2.3C1.39167 0.642857 0.65 1.37546 0.65 2.28571V2.30503V2.58904L0.89393 2.73449L10.3564 8.37672C11.0605 8.79651 11.9395 8.79651 12.6436 8.37672L22.1061 2.73449ZM1.40607 3.20837L0.65 2.75755V3.63782V13.7143C0.65 14.6245 1.39167 15.3571 2.3 15.3571H20.7C21.6083 15.3571 22.35 14.6245 22.35 13.7143V3.63782V2.75755L21.5939 3.20837L12.7231 8.49781C11.9704 8.94663 11.0296 8.94663 10.2769 8.49781L1.40607 3.20837ZM0.5 13.7143V2.28571C0.5 1.30242 1.30295 0.5 2.3 0.5H20.7C21.6971 0.5 22.5 1.30242 22.5 2.28571V13.7143C22.5 14.6976 21.6971 15.5 20.7 15.5H2.3C1.30295 15.5 0.5 14.6976 0.5 13.7143Z" fill="#E6CF73" stroke="#E4CB69"/>
+</svg>dsm47@rambler.ru</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Кругосветка <br> Автобиографическое плавание</span>
+                        <button class="mmenu__link-btn jsSubmenuOpen" type="button"><svg width="4" height="9" viewBox="0 0 4 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4.54768L0.469938 8.47678L0.469939 0.618576L4 4.54768Z" fill="black"/>
+</svg>
+                        </button></a>
+                      <div class="submmenu">
+                        <div class="mmenu__main">
+                          <div class="mmenu__top">
+                            <div class="mmenu__left">
+                              <button class="mmenu__btn jsSubmenuClose" type="button">
+                                <svg width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.646446 3.64644C0.451185 3.84171 0.451185 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976309 4.7308 0.659727 4.53553 0.464465C4.34027 0.269203 4.02369 0.269203 3.82843 0.464465L0.646446 3.64644ZM20 3.5L1 3.5L1 4.5L20 4.5L20 3.5Z" fill="#191919"/>
+</svg>Назад
+                              </button>
+                            </div>
+                            <div class="mmenu__right">
+                              <button class="mmenu__close jsMenuClose" type="button"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.7935 6.4L18.3935 5L12.7935 10.6L7.19346 5L5.79346 6.4L11.3935 12L5.79346 17.6L7.19346 19L12.7935 13.4L18.3935 19L19.7935 17.6L14.1935 12L19.7935 6.4Z" fill="#BDBDBD"/>
+</svg>
+                              </button>
+                            </div>
+                          </div><a class="mmenu__section" href="/">Кругосветка <br> Автобиографическое плавание</a>
+                          <div class="mmenu__center">
+                            <div class="mmenu__nav mmenu__nav_sub">
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">По морям, по океанам на <br> "Отрадном", "Шаляпине", <br> "Лермонтове"</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">В тени двух флагов</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Злоключения <br> "плюшевого мишки"</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Остров из никеля</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Преступление века</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Осень в городе Геркулеса</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Неземная земля Лансароте</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Флаг на горе Анкон</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Старая сеть вся в дырах</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Если упал кокос...</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Ананас коварный</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Фабрика иллюзий</span></a></div>
+                            </div>
+                          </div>
+                          <div class="mmenu__bottom">
+                            <div class="mmenu__email"><a class="email" href="mailto:dsm47@rambler.ru">
+                                <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.1061 2.73449L22.35 2.58904V2.30503V2.28571C22.35 1.37546 21.6083 0.642857 20.7 0.642857H2.3C1.39167 0.642857 0.65 1.37546 0.65 2.28571V2.30503V2.58904L0.89393 2.73449L10.3564 8.37672C11.0605 8.79651 11.9395 8.79651 12.6436 8.37672L22.1061 2.73449ZM1.40607 3.20837L0.65 2.75755V3.63782V13.7143C0.65 14.6245 1.39167 15.3571 2.3 15.3571H20.7C21.6083 15.3571 22.35 14.6245 22.35 13.7143V3.63782V2.75755L21.5939 3.20837L12.7231 8.49781C11.9704 8.94663 11.0296 8.94663 10.2769 8.49781L1.40607 3.20837ZM0.5 13.7143V2.28571C0.5 1.30242 1.30295 0.5 2.3 0.5H20.7C21.6971 0.5 22.5 1.30242 22.5 2.28571V13.7143C22.5 14.6976 21.6971 15.5 20.7 15.5H2.3C1.30295 15.5 0.5 14.6976 0.5 13.7143Z" fill="#E6CF73" stroke="#E4CB69"/>
+</svg>dsm47@rambler.ru</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Критика</span>
+                        <button class="mmenu__link-btn jsSubmenuOpen" type="button"><svg width="4" height="9" viewBox="0 0 4 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4.54768L0.469938 8.47678L0.469939 0.618576L4 4.54768Z" fill="black"/>
+</svg>
+                        </button></a>
+                      <div class="submmenu">
+                        <div class="mmenu__main">
+                          <div class="mmenu__top">
+                            <div class="mmenu__left">
+                              <button class="mmenu__btn jsSubmenuClose" type="button">
+                                <svg width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.646446 3.64644C0.451185 3.84171 0.451185 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976309 4.7308 0.659727 4.53553 0.464465C4.34027 0.269203 4.02369 0.269203 3.82843 0.464465L0.646446 3.64644ZM20 3.5L1 3.5L1 4.5L20 4.5L20 3.5Z" fill="#191919"/>
+</svg>Назад
+                              </button>
+                            </div>
+                            <div class="mmenu__right">
+                              <button class="mmenu__close jsMenuClose" type="button"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.7935 6.4L18.3935 5L12.7935 10.6L7.19346 5L5.79346 6.4L11.3935 12L5.79346 17.6L7.19346 19L12.7935 13.4L18.3935 19L19.7935 17.6L14.1935 12L19.7935 6.4Z" fill="#BDBDBD"/>
+</svg>
+                              </button>
+                            </div>
+                          </div><a class="mmenu__section" href="/">Критика</a>
+                          <div class="mmenu__center">
+                            <div class="mmenu__nav mmenu__nav_sub">
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">По морям, по океанам на <br> "Отрадном", "Шаляпине", <br> "Лермонтове"</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">В тени двух флагов</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Злоключения <br> "плюшевого мишки"</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Остров из никеля</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Преступление века</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Осень в городе Геркулеса</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Неземная земля Лансароте</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Флаг на горе Анкон</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Старая сеть вся в дырах</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Если упал кокос...</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Ананас коварный</span></a></div>
+                              <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Фабрика иллюзий</span></a></div>
+                            </div>
+                          </div>
+                          <div class="mmenu__bottom">
+                            <div class="mmenu__email"><a class="email" href="mailto:dsm47@rambler.ru">
+                                <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.1061 2.73449L22.35 2.58904V2.30503V2.28571C22.35 1.37546 21.6083 0.642857 20.7 0.642857H2.3C1.39167 0.642857 0.65 1.37546 0.65 2.28571V2.30503V2.58904L0.89393 2.73449L10.3564 8.37672C11.0605 8.79651 11.9395 8.79651 12.6436 8.37672L22.1061 2.73449ZM1.40607 3.20837L0.65 2.75755V3.63782V13.7143C0.65 14.6245 1.39167 15.3571 2.3 15.3571H20.7C21.6083 15.3571 22.35 14.6245 22.35 13.7143V3.63782V2.75755L21.5939 3.20837L12.7231 8.49781C11.9704 8.94663 11.0296 8.94663 10.2769 8.49781L1.40607 3.20837ZM0.5 13.7143V2.28571C0.5 1.30242 1.30295 0.5 2.3 0.5H20.7C21.6971 0.5 22.5 1.30242 22.5 2.28571V13.7143C22.5 14.6976 21.6971 15.5 20.7 15.5H2.3C1.30295 15.5 0.5 14.6976 0.5 13.7143Z" fill="#E6CF73" stroke="#E4CB69"/>
+</svg>dsm47@rambler.ru</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mmenu__bottom">
+                  <div class="mmenu__email"><a class="email" href="mailto:dsm47@rambler.ru">
+                      <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.1061 2.73449L22.35 2.58904V2.30503V2.28571C22.35 1.37546 21.6083 0.642857 20.7 0.642857H2.3C1.39167 0.642857 0.65 1.37546 0.65 2.28571V2.30503V2.58904L0.89393 2.73449L10.3564 8.37672C11.0605 8.79651 11.9395 8.79651 12.6436 8.37672L22.1061 2.73449ZM1.40607 3.20837L0.65 2.75755V3.63782V13.7143C0.65 14.6245 1.39167 15.3571 2.3 15.3571H20.7C21.6083 15.3571 22.35 14.6245 22.35 13.7143V3.63782V2.75755L21.5939 3.20837L12.7231 8.49781C11.9704 8.94663 11.0296 8.94663 10.2769 8.49781L1.40607 3.20837ZM0.5 13.7143V2.28571C0.5 1.30242 1.30295 0.5 2.3 0.5H20.7C21.6971 0.5 22.5 1.30242 22.5 2.28571V13.7143C22.5 14.6976 21.6971 15.5 20.7 15.5H2.3C1.30295 15.5 0.5 14.6976 0.5 13.7143Z" fill="#E6CF73" stroke="#E4CB69"/>
+</svg>dsm47@rambler.ru</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Критика</span></a></div>
+          <div class="mmenu__item"><a class="mmenu__link" href="/"><span class="mmenu__link-name">Новости</span></a></div>
+        </div>
+      </div>
+      <div class="mmenu__bottom">
+        <div class="mmenu__email"><a class="email" href="mailto:dsm47@rambler.ru">
+            <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.1061 2.73449L22.35 2.58904V2.30503V2.28571C22.35 1.37546 21.6083 0.642857 20.7 0.642857H2.3C1.39167 0.642857 0.65 1.37546 0.65 2.28571V2.30503V2.58904L0.89393 2.73449L10.3564 8.37672C11.0605 8.79651 11.9395 8.79651 12.6436 8.37672L22.1061 2.73449ZM1.40607 3.20837L0.65 2.75755V3.63782V13.7143C0.65 14.6245 1.39167 15.3571 2.3 15.3571H20.7C21.6083 15.3571 22.35 14.6245 22.35 13.7143V3.63782V2.75755L21.5939 3.20837L12.7231 8.49781C11.9704 8.94663 11.0296 8.94663 10.2769 8.49781L1.40607 3.20837ZM0.5 13.7143V2.28571C0.5 1.30242 1.30295 0.5 2.3 0.5H20.7C21.6971 0.5 22.5 1.30242 22.5 2.28571V13.7143C22.5 14.6976 21.6971 15.5 20.7 15.5H2.3C1.30295 15.5 0.5 14.6976 0.5 13.7143Z" fill="#E6CF73" stroke="#E4CB69"/>
+</svg>dsm47@rambler.ru</a></div>
+      </div>
+    </div>
+  </div>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <!-- Для изменений после верстки-->
+  <script src="js/custom.js"></script>
 </html>
